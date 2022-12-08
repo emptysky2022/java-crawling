@@ -23,7 +23,7 @@ public class SeoulLocationTest {
 
 
 	private void seoulLocation() {
-		SeoulLocationDAO dao = SeoulLocationDAO.newInstance();
+		SeoulLocation dao = SeoulLocation.newInstance();
 		
 		try {
 			Element pages = Jsoup.connect("https://korean.visitseoul.net/attractions").get().select("div.paging-lst a").last();
